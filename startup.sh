@@ -39,7 +39,6 @@ mongo-connector --auto-commit-interval=0 \
   --oplog-ts=/data/oplog.ts \
   --main ${mongo}:27017 \
   --target-url ${elasticsearch}:9200 \
-  --doc-manager elastic_doc_manager \
-  --admin-username ${MONGO_USERNAME} \
-  --password ${MONGO_PASSWORD} \
-
+  --doc-manager elastic2_doc_manager \
+  # --admin-username ${MONGO_USERNAME} \
+  # --password ${MONGO_PASSWORD} \
